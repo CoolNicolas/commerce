@@ -1,0 +1,23 @@
+.site-header {
+    padding: 60px 20px 40px 20px;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    color: white;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.site-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.site-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Adjust content spacing */
+.main-content {
+    margin-top: 20px;
+}

@@ -1,0 +1,26 @@
+{% extends "auctions/layout.html" %}
+
+{% block title %}Closed Listings{% endblock %}
+
+{% block body %}
+<h2>Closed Listings</h2>
+
+{% if closed_listings %}
+    <ul class="list-group">
+        {% for listing in closed_listings %}
+            <li class="list-group-item">
+                <a href="{% url 'listing' listing.id %}">{{ listing.title }}</a>
+                {% if listing.winner %}
+                    - Winner: {{ listing.winner.username }}
+                {% else %}
+                    - No bids placed
+                {% endif %}
+
+                
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>You have no closed listings yet.</p>
+{% endif %}
+{% endblock %}
